@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+
+    <head>      
+		<meta charset="utf-8">
+		<title>Haven - Responsive One Page WordPress Theme Documentation - pixelentity</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/syntax.css" />
+		<link rel="stylesheet" href="css/docs_style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.pixelentity.hotspot.js"></script>
+		<script type="text/javascript" src="js/docs.js"></script>
+	</head>
+	
+    <body>
+	
+		<!--header section-->
+		<div class="header">
+			
+			<!--logo-->
+			<a href="http://pixelentity.com" class="logo"><img src="img/logo.png" alt="logo" /></a>
+			
+			<!--introduction text-->
+			<div class="intro">				
+				<p>Hi there and thank you for buying a premium digital product from Pixelentity. In order to get the most out of your purchase, please make sure to carefully read all of the information contained in this page. Use the table of contents at the top of this page to jump to a relevant section.</p>
+			</div>
+			<!--end introduction text-->
+			
+			<span class="title">Haven - Responsive One Page WordPress Theme</span>
+			
+		</div>
+		
+		<!--end header section-->
+		<div class="toc" id="toc">
+			<h1>TABLE OF CONTENTS</h1>
+			<!-- toc -->
+<a class="section" href="#sec1_0"><span>1</span> Getting Started</a><a class="subsection" href="#sec1_1"><span>1.1</span>Download Package Contents</a><a class="subsection" href="#sec1_2"><span>1.2</span>Installing Your Theme</a><a class="subsection" href="#sec1_3"><span>1.3</span>Theme Installation Errors</a><a class="section" href="#sec2_0"><span>2</span> Theme Setup</a><a class="subsection" href="#sec2_1"><span>2.1</span>Importing Demo Content</a><a class="section" href="#sec3_0"><span>3</span> Theme Structure - How It Works</a><a class="section" href="#sec4_0"><span>4</span> Retina Support</a><a class="section" href="#sec5_0"><span>5</span> Custom Thumb Cropping</a><a class="section" href="#sec6_0"><span>6</span> Creating Posts</a><a class="subsection" href="#sec6_1"><span>6.1</span>Custom Metaboxes</a><a class="subsection" href="#sec6_2"><span>6.2</span>Post Format: Standard</a><a class="subsection" href="#sec6_3"><span>6.3</span>Post Format: Video</a><a class="subsection" href="#sec6_4"><span>6.4</span>Post Format: Gallery</a><a class="section" href="#sec7_0"><span>7</span> Creating a Gallery</a><a class="subsection" href="#sec7_1"><span>7.1</span>Direct Upload Gallery</a><a class="subsection" href="#sec7_2"><span>7.2</span>Gallery Image Display Options</a><a class="subsection" href="#sec7_3"><span>7.3</span>Media Tags</a><a class="subsection" href="#sec7_4"><span>7.4</span>Media Tags Gallery</a><a class="section" href="#sec8_0"><span>8</span> Creating a Video</a><a class="section" href="#sec9_0"><span>9</span> Creating a Project</a><a class="subsection" href="#sec9_1"><span>9.1</span>Project Format: Standard</a><a class="subsection" href="#sec9_2"><span>9.2</span>Project Format: Video</a><a class="subsection" href="#sec9_3"><span>9.3</span>Project Format: Gallery</a><a class="section" href="#sec10_0"><span>10</span> Creating Staff Member Profiles</a><a class="section" href="#sec11_0"><span>11</span> Creating Testimonials</a><a class="section" href="#sec12_0"><span>12</span> Creating Pages</a><a class="subsection" href="#sec12_1"><span>12.1</span>Page template: Common Options</a><a class="subsection" href="#sec12_2"><span>12.2</span>Page template: Home</a><a class="subsection" href="#sec12_3"><span>12.3</span>Page template: Header</a><a class="subsection" href="#sec12_4"><span>12.4</span>Page template: Default Template</a><a class="subsection" href="#sec12_5"><span>12.5</span>Page template: About</a><a class="subsection" href="#sec12_6"><span>12.6</span>Page template: Blog</a><a class="subsection" href="#sec12_7"><span>12.7</span>Page template: Portfolio</a><a class="subsection" href="#sec12_8"><span>12.8</span>Page template: Testimonials</a><a class="subsection" href="#sec12_9"><span>12.9</span>Page template: Stats</a><a class="subsection" href="#sec12_10"><span>12.10</span>Page template: Divider</a><a class="subsection" href="#sec12_11"><span>12.11</span>Page template: Pricing Tables</a><a class="subsection" href="#sec12_12"><span>12.12</span>Page template: Services</a><a class="section" href="#sec13_0"><span>13</span> Theme Options</a><a class="subsection" href="#sec13_1"><span>13.1</span>General Options</a><a class="subsection" href="#sec13_2"><span>13.2</span>Header Options</a><a class="subsection" href="#sec13_3"><span>13.3</span>Footer Options</a><a class="subsection" href="#sec13_4"><span>13.4</span>Color Options</a><a class="subsection" href="#sec13_5"><span>13.5</span>Google Font Options</a><a class="subsection" href="#sec13_6"><span>13.6</span>Contact Form Options</a><a class="subsection" href="#sec13_7"><span>13.7</span>Widget Areas Options</a><a class="subsection" href="#sec13_8"><span>13.8</span>Advanced Options</a><a class="subsection" href="#sec13_9"><span>13.9</span>Auto Update Options</a><a class="subsection" href="#sec13_10"><span>13.10</span>Branding Options (Hidden)</a><a class="section" href="#sec14_0"><span>14</span> Widgetized Areas &amp; Inserting Widgets</a><a class="subsection" href="#sec14_1"><span>14.1</span>Creating A Widgetized Area</a><a class="subsection" href="#sec14_2"><span>14.2</span>Inserting Widgets</a><a class="subsection" href="#sec14_3"><span>14.3</span>Placing Your widgetized Area Into The Theme</a><a class="section" href="#sec15_0"><span>15</span> The Main Menu</a><a class="subsection" href="#sec15_1"><span>15.1</span>Creating A Menu</a><a class="subsection" href="#sec15_2"><span>15.2</span>Adding The Menu To the Theme</a><a class="section" href="#sec16_0"><span>16</span> Shortcodes</a><a class="subsection" href="#sec16_1"><span>16.1</span>Shortcode - Stats</a><a class="subsection" href="#sec16_2"><span>16.2</span>Shortcode - Staff</a><a class="subsection" href="#sec16_3"><span>16.3</span>Shortcode - Testimonials</a><a class="subsection" href="#sec16_4"><span>16.4</span>Shortcode - Columns</a><a class="subsection" href="#sec16_5"><span>16.5</span>Shortcode - Video</a><a class="section" href="#sec17_0"><span>17</span> Fonts</a><a class="section" href="#sec18_0"><span>18</span> Theme Translation</a><a class="subsection" href="#sec18_1"><span>18.1</span>Translation Using POT File</a><a class="subsection" href="#sec18_2"><span>18.2</span>Modifying The theme&#39;s CSS</a><a class="section" href="#sec19_0"><span>19</span> Javascript</a><a class="subsection" href="#sec19_1"><span>19.1</span>Adding Custom Javascript</a><a class="section" href="#sec20_0"><span>20</span> Rebranding the Custom Admin Panel</a><a class="section" href="#sec21_0"><span>21</span> Updates</a>		</div>
+		
+		<!-- docs -->		
+<div class="bbcode-body">
+<br/>
+<h1><a name="sec1_0">1</a> Getting Started<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec1_1">1.1</a> Download Package Contents</h2>
+<br/>
+Once you have downloaded and unzipped the haven package you will be faced with a list of files and folders. An explanation of these is as follows. Any item not mentioned here should be ignored for the moment.<br/>
+<br>
+<b>Folders</b>
+<br/>
+<table><tr><td class="option">haven.theme.zip</td><td class="value">This is a zip archive of the theme. This is used for installation method 2 (see below)<td></tr><tr><td class="option">docs</td><td class="value">This is the help documentation. To view simply open <i>index.html</i> found inside this folder<td></tr></table>
+<h2><a name="sec1_2">1.2</a> Installing Your Theme</h2>
+<br/>
+Once you have downloaded the haven package from Themeforest.net, there are 2 ways of installing this theme. These are as follows:<br/>
+<br>
+<b>METHOD 1</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Unzip the download package using Winzip or equivalent.<br/>
+	</li>
+	<li>You will see another zip archive file inside called <b>haven.theme.zip</b>, unzip this file also using Winzip or equivalent software and using an FTP client (eg. Filezilla), upload its contents to your WordPress installation. You will need to place the folder into the following location:  <i>wp-content/themes</i>
+	</li>
+	<li>Now inside your WordPress admin area, go to <i>Appearance &gt; Themes</i> and there you will see the haven Theme.<br/>
+	</li>
+	<li>Click <i>Activate</i> to activate the theme. If you do not see the theme in this screen, you have done something incorrectly. Review the last few steps again.</li>
+</ol>
+<b>METHOD 2</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Unzip the haven download package. Once unzipped you will see a zip file named <b>haven.theme.zip</b>, this is a compressed version of the theme.<br/>
+	</li>
+	<li>Now inside your Wordpress admin area, go to <i>Appearance &gt; Themes &gt; Install Themes (tab) &gt; Upload</i>
+	</li>
+	<li>Click browse and locate this <b>haven.theme.zip</b> file and upload it<br/>
+	</li>
+	<li>Now you will see the haven theme in the <i>Manage Themes</i> tab.<br/>
+	</li>
+	<li>Click <i>Activate</i> to activate the theme. If you do not see the theme in this screen, you have done something incorrectly. Review the last few steps again.</li>
+</ol>
+<b>Installation Video</b>
+<br/>
+Here is a link to an video showing the installation of the theme and the importing of demo content: <a href="http://www.youtube.com/watch?v=heHlFAb0x_4" rel="nofollow">INSTALLATION VIDEO</a><div class="note"><b>Congratulations you have now successfully installed the haven Theme</b></div>
+<h2><a name="sec1_3">1.3</a> Theme Installation Errors</h2>
+<br/>
+<div class="alert">Do not upload the Themeforest download package directly to your Wordpress site, because this will lead to errors. Make sure to Unzip this package and inside you will find the theme zip archive: <b>haven.theme.zip</b>. This is what you will need to upload to your Wordpress installation</div>
+<br/>
+<b>If you upload / Install the haven theme and you get one of the following errors, then you have forgotten to unzip the download package.</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>This theme is invalid<br/>
+	</li>
+	<li>This theme is missing a style.css</li>
+</ol>
+<br/>
+<h1><a name="sec2_0">2</a> Theme Setup<a class="top" href="#toc">top</a></h1>Before you start using the haven theme, a few setup steps are required. This section will walk you through these steps.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec2_1">2.1</a> Importing Demo Content</h2>
+<br/>
+Some buyers like to install their theme and have it look exactly like the Themeforest preview site. If this is something you would like to do, then follow the steps in this section. This step is optional so feel free to skip it. The subsequent sections will provide all the instructions you need to insert your own content manually.<div class="note">The dummy content inserted in this step will not contain the beautiful images seen in the Themeforest.net demo. These images cannot be included because they are commercial images, which we have purchased for theme demonstration only and we do not have a redistribution license for these assets.</div><b>To Import Demo Content</b><div class="note">Make sure to install and activate the haven theme before importing any demo content.</div><img src="shots/Import Demo Content.png" alt="[Import%20Demo%20Content.png]" title="" /> 
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Install and activate the haven theme. (See section above)<br/>
+	</li>
+	<li>Go to the haven theme options <i>Appearance &gt; Theme Options</i>
+	</li>
+	<li>The <b>General</b> tab should be open by default, but if not click it to show the general options.<br/>
+	</li>
+	<li>The very first section in the <b>General</b> is the demo Content import section.<br/>
+	</li>
+	<li>Click the large green <i>Import Demo Content</i> button once only.<br/>
+	</li>
+	<li>The theme will now import our demo content into you site. A progress bar will inform you of the import processes progress.<br/>
+	</li>
+	<li>This importer will basically import posts, pages, comments, custom fields, categories, tags, sidebars, widgets, menus and all configuration from our preview content export file.</li>
+</ol>
+<div class="note">Please note that dummy images will be used instead of the premium image assets we have used in our online preview.</div><div class="alert"><b>Alert 2</b> If you already have content in your site, you will be asked to confirm the import, but if your site is a fresh installation of Wordpress, there will be no confirmation request. Importing demo content will not overwrite existing content such as posts or pages, but it will replace all sidebar and widget configuration. So please be aware of this before you decide to do this process.</div>
+<h1><a name="sec3_0">3</a> Theme Structure - How It Works<a class="top" href="#toc">top</a></h1>The haven theme is essentially a single page theme with a separate blog section. The single page layout is made up of a master page and multiple subpages. These sub pages make up the sub sections of the single page layout, sections like services, portfolio, clients etc. Sub sections are basically accessed via main navigation and they will appear in whatever order you choose. To construct this site structure you need to follow these steps:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Create a Master Page using the &quot;Home&quot; or &quot;Header&quot; page template. (See &quot;Creating Pages&quot; section for more info.)<br/>
+	</li>
+	<li>Next create a separate page for each of the sub sections you would like to insert on the one page layout.<br/>
+	</li>
+	<li>In the &quot;Page Attributes&quot; box on the right hand side of the &quot;Edit Page&quot; admin you will assign the master page you created in step 1 as the parent of each of these sub pages. To do this simply select the &quot;Home&quot; or &quot;Header&quot; page from the dropdown list available under Parent field.<br/>
+	</li>
+	<li>Next you will need to specify the order in which these sub pages will appear. This can be done in the same box using the &quot;Order&quot; field. Enter 1 or 2 or 3... etc. in here for each of your desired sub pages. This will dictate the sequence in which the sections appear in the one page setup, when scrolling down.<br/>
+	</li>
+	<li>Next you just need to tell WordPress to use your master page as the opening page of your website, to do this go to &quot;Settings &gt; Reading&quot; in the WP admin and set your master page as the &quot;Front Page&quot; (Static) in the option entitled &quot;Front Page Displays&quot;.<br/>
+	</li>
+	<li>Now your website will open with your master page and if you scroll down or use the main menu, you will see all of your sub pages in the order which you set in step 4 above. These new sections will be displayed without a full page reload.</li>
+</ol>
+<div class="note">The Blog page (plus optionally any other pages you would like) is an exception to this structure, it must be attached as a separate page only and may not be a child or sub-page of the homepage section. This means that a reload is needed when switching to the blog section. The Blog section is created like a normal page (Using the blog page template) and is simply linked via the main menu. (See the &quot;Menu&quot; section for more info about this.</div>
+<h1><a name="sec4_0">4</a> Retina Support<a class="top" href="#toc">top</a></h1>The haven theme contains optional support for devices with a retina display. This support may be enabled/disabled via the theme options ( Appearance&gt;Theme Options&gt;Advanced Tab&gt;Retina Support&gt; Yes/No).<br/>
+<br>
+What retina support really means is that the theme will serve hi-res version of content images to decide which have a retina display. This is done automatically for all content used in the theme except for one place; The site logo.<br/>
+<br>
+<b>Creating a Retina Site Logo</b>
+<br/>
+If retain support is enabled, a high resolution version of the site logo is required. The theme will not automatically create this, it must be done manually. See the instructions below:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Using image editing software, you will need to create a version of your logo image which is 2 times the size of your original logo. For example is your original logo is 100x50px, the retina logo will need to be 200x100px.<br/>
+	</li>
+	<li>When creating this retina logo, there is a rule about how the retina logo has to be named. The file name must be exactly the same as the original image but with a suffix of <b>@2x</b>, added just before the file type.<br/>
+	</li>
+	<li>For example, say your original image is called <b>logo.jpg</b>, therefore the retina image file name would be <b>logo@2x.jpg</b>.<br/>
+	</li>
+	<li>Upload both the normal logo image and the 2x logo image at the same time to your WP theme insert the original logo image into the logo option in the theme options and the theme will automatically take care of the rest.</li>
+</ol>
+<br/>
+<h1><a name="sec5_0">5</a> Custom Thumb Cropping<a class="top" href="#toc">top</a></h1><img src="shots/thumbnail.crop.png" alt="[thumbnail.crop.png]" title="" />
+<br/>
+The haven theme contains a custom thumbnail cropping feature. This feature is most useful if you want to control how your large images are cropped when they are for example shown in your portfolio grid. With this feature you can control exactly how the thumbnails are created from your larger images.<br/>
+To use this feature go to: <b>Media &gt; Library</b> in the main WordPress menu. Now select any image from the library, an image used in your projects would be most suitable. On the main attachment page, scroll down until you see the dialog box entitled: &quot;Thumbnails&quot;. To define a custom crop for a thumbnail, do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>This dialog will contain all of the thumbnail version of this attachment which have been auto-generated by the theme for use in those areas you have inserted this image. If this image features in many areas of the theme, or has done at some stage, but was replaced, this dialog may contain numerous thumbnails. 
+	</li>
+	<li>Find the thumbnail which corresponds with the size of the thumbnail in your portfolio page (which you wish to re-crop). You may need to check the size of that image in your portfolio grid page. You can do this with an element inspector which is built into most modern browsers. Use it by right clicking once you are hovering the image, then select &quot;Inspect Element&quot; from the context menu. Now you should be able to find the image size in the panels which appear.<br/>
+	</li>
+	<li>Once you have found the thumb you are looking for, click it in the dialog. This will open the thumb cropping control, hiding all other thumbs in the process.<br/>
+	</li>
+	<li>With your mouse you can now resize and reposition the cropping frame in the window on the left. Once the position has changed you will see a preview of the resulting thumbnail in the window on the right.<br/>
+	</li>
+	<li>When you have found a suitable crop for this thumbnail, click the &quot;Save&quot; button. The crop control will close and the other thumbs will reappear. 
+	</li>
+	<li>Now refresh your portfolio grid page to view the updated thumbnail. Remember to clear your browser cache, otherwise the updated thumbnail may not appear.</li>
+</ol>
+<div class="note">Once thumb cropping has been altered, the browser cache should be cleared before viewing the page which contains the updated thumbnail.</div>
+<h1><a name="sec6_0">6</a> Creating Posts<a class="top" href="#toc">top</a></h1>The haven theme contains 3 different post formats - Standard, Video and Gallery. 
+<br/>
+<br>
+<br/>
+<h2><a name="sec6_1">6.1</a> Custom Metaboxes</h2>
+<br/>
+haven supports several post formats, some of them like <i>Video</i> or <i>Gallery</i> require additional configuration parameters which can be set in the Metabox Area, under the post/page content editor. Each time a Post Format is selected, the page updates and only the Metaboxes relevant to the current selections will be shown.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec6_2">6.2</a> Post Format: Standard</h2>
+<br/>
+This format accepts an optional featured image. To insert this featured image do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>In the Featured Image box, click <i>Set featured Image</i>
+	</li>
+	<li>This will open the WP media loader. Select the image you wish to use for the featured image. The resolution should be large, minimum of 1000px wide and the pixelentity framework will auto-generate the size required for the post. ( The image should be optimized for web and devices and should have a file size generally less that 300kb. The smaller the file size the better, as long as the image quality is not compromised. )<br/>
+	</li>
+	<li>Once the image is loaded ensure the <i>original size</i> is selected and click the <i>Set as Featured Image</i> button.<br/>
+	</li>
+	<li> Close the media uploader window and publish your post.</li>
+</ol>
+<br/>
+<h2><a name="sec6_3">6.3</a> Post Format: Video</h2>
+<br/>
+This format accepts a custom video post type as its media content. To insert this video do the following:<br/>
+<br>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Video Options</i> Metabox. There you will find a drop menu containing the list of all the custom video post types which have been created.<br/>
+	</li>
+	<li>Select the video you wish to feature in this post.<br/>
+	</li>
+	<li>You can also add a featured image to this post. If one is added it will become the cover image for the video item. If no featured image is entered, the video item will attempt to load its default cover image generated by YouTube or Vimeo, depending on which service you are using. 
+	</li>
+	<li> Now publish the post.</li>
+</ol>
+<div class="note">It should be noted that if  you are using the auto cover image fetching method. The theme will only be able to fetch this image is the original video uploader has permitted it. This is usually permitted by default except for videos marked &quot;private&quot;. If the video is private, no image will be loaded.</div><div class="alert">In order for a video to appear in the list, it first needs to be created. See the section on <b>Creating A Video</b> for more information.</div>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec6_4">6.4</a> Post Format: Gallery</h2>
+<br/>
+This format accepts a custom gallery post type as its media content. To insert this gallery do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Gallery</i> box. There you will find a drop menu containing the list of all the custom gallery post types which have been created.<br/>
+	</li>
+	<li>Select the gallery you wish to feature in this post.<br/>
+	</li>
+	<li>Underneath the list of galleries you can specify the width and height of the desired gallery. These values may mean that your images will be cropped in order to achieve the entered dimensions. The extend of the cropping depends on the image&#39;s original aspect ratio. To avoid cropping of the images leave these fields blank and the gallery will be sized to fit its content / container.</li>
+</ol>
+<div class="alert">In order for a gallery to appear in the list, it first needs to be created. See the section on <b>Creating A Gallery</b> for more information.</div><div class="note">In this theme all gallery posts will display their content as a slider.</div>
+<h1><a name="sec7_0">7</a> Creating a Gallery<a class="top" href="#toc">top</a></h1>The haven theme features a Gallery custom post type. This can be found in the main WP admin menu <i>Galleries</i>. All gallery type posts and portfolio items will need to have their gallery content created first using this custom post type. Once it has been created here it will be available to be inserted into those areas.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec7_1">7.1</a> Direct Upload Gallery</h2>
+<br/>
+This type of gallery is most suited for when the images you want to display are not already uploaded to your Wordpress installation, it will present you with a big &quot;Drop Files Here&quot; area into which you can just drag and drop images from your hard drive. The gallery will take care of everything and, once the upload process is done, you can just save/publish. The image order can be manually altered by dragging thumbs to suit your needs.<br/>
+<br>
+<b>To create a Direct Upload Gallery do the following:</b>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Galleries</i> item in the main admin menu &amp; select &quot;Add New&quot;.<br/>
+	</li>
+	<li>In the <i>Gallery</i>box, select &quot;Direct upload&quot;.<br/>
+	</li>
+	<li>Drag and drop your images into the <i>Upload Gallery Images</i> section&#39;s drop zone with the dashed outline.<br/>
+	</li>
+	<li>These images will now load and appear below the drop zone in the <i>Gallery Content</i> area as thumbnails.<br/>
+	</li>
+	<li>You may drag these thumbnails to reorganize the sequence of images if this is important.<br/>
+	</li>
+	<li>You may also add an optional featured image to the gallery post. This will be used as the cover for the gallery post in certain configurations.<br/>
+	</li>
+	<li>Now click <i>Publish</i> to publish this gallery post. This type of post is mostly used to provide content for another post or portfolio project. The post may also be viewed in it&#39;s own page however by clicking the <i>View Post</i> button.</li>
+</ol>
+<br/>
+<h2><a name="sec7_2">7.2</a> Gallery Image Display Options</h2>
+<br/>
+The haven theme contains one single display option - Slider.<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li><b>Slider:</b> The content of the gallery will be displayed as slider. There are no additional options for this mode.</li>
+</ol>
+<br/>
+<h2><a name="sec7_3">7.3</a> Media Tags</h2>
+<br/>
+The WordPress media library doesn&#39;t allow you to categorize attachments/images in any way besides the upload date. For this reason, in our framework, we have introduced a feature called &quot;Media Tags&quot;. Media Tags work exactly like regular &quot;Tags&quot; do for posts: each image can be assigned one or more tags which can then be used to group similar/related images.The media library admin page has been expanded to allow easy media tags management and image filter by tag.<br/>
+<br>
+<br/>
+<h2><a name="sec7_4">7.4</a> Media Tags Gallery</h2>
+<br/>
+When Wordpress media library is already filled with some images, you can categorize them by using media tags. Once you have created one or more media tags, you can use them to create a gallery. Unlike the direct upload case, the gallery will now show a list of all existing media tags: by selecting one (or more) tag from the list (and clicking the refresh button), all the images assigned to those tag will be automatically added to the gallery. Since the same tags can be used in multiple galleries, you don&#39;t need to upload the same image multiple times in order for it to appear in different places. Whenever you assign additional images to a media tag, every galleries making use of these tags will also update its content automatically.<br/>
+<br>
+See a video of this process in action: <a href="http://www.youtube.com/watch?v=B16L2AFOUxE" rel="nofollow">MEDIA TAGS VIDEO</a>
+<br/>
+<br>
+<b>To create a Media Tags Gallery do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Galleries</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>In the <i>Gallery Options</i>box select &quot;Media tags (Any)&quot; or &quot;Media Tags (All)&quot;. For an explanation of media tags see the Media Tags section above.<ul>
+			<li><b>Any</b> will includes all the images matching at least one of the selected media tags. 
+			</li>
+			<li><b>All</b> will include all the images matching all the selected media tags.</li>
+		</ul>
+	</li>
+	<li>Select one or more <i>Media Tags</i> from the list<br/>
+	</li>
+	<li>Click <i>Refresh</i> button<br/>
+	</li>
+	<li>These images will now load and appear below the drop zone in the <i>Gallery Content</i> area as thumbnails.<br/>
+	</li>
+	<li>You may drag these thumbnails to reorganize the sequence of images in the Gallery if this is important.<br/>
+	</li>
+	<li>You may also add an optional featured image to the gallery post. This will be used as the cover for the gallery post in certain configurations.<br/>
+	</li>
+	<li>Now click <i>Publish</i> to publish this gallery post. This post will not appear in your website. This type of post is only used to provide content for another post or portfolio project. The post may be viewed in it&#39;s own page however by clicking the <i>View Post</i> button.</li>
+</ol>
+<br/>
+<h1><a name="sec8_0">8</a> Creating a Video<a class="top" href="#toc">top</a></h1>The haven theme features a video custom post type. This can be found in the main WP admin menu <i>Videos</i>. All video type posts and portfolio items will need to have their video content created first using this custom post type. Once it has been created here it will be available to be inserted into those areas.<br/>
+<br>
+<br/>
+<img src="shots/vid.jpg" alt="[vid.jpg]" title="" />
+<br/>
+<br>
+<b>To create a video custom post do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Videos</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>In the <i>Video Options</i>box select what type of video you would like to create.The options are <b>Youtube</b> and <b>Vimeo</b>
+	</li>
+	<li>In both video types, you just need to insert the url of the online video into the <i>Video URL</i> field.<br/>
+	</li>
+	<li>Select whether the video will play fullscreen using the &quot;Play Fullscreen&quot; option.<br/>
+	</li>
+	<li>Set the max-width of the video when it is played in fullscreen mode.<br/>
+	</li>
+	<li>Finally, click <i>Publish</i> to publish your video custom post type. This post will not immediately appear in your website. This type of post is normally used to provide content for another post or portfolio project. However the post may be viewed in it&#39;s own page by clicking the <i>View Post</i> button.</li>
+</ol>
+<div class="note">When inserting the video url, make sure the url does not include &quot;https&quot; but should simply be &quot;http&quot;, because this can prevent the video from being loaded correctly. Also make sure that the video&#39;s url is the full url and not some kind of shortened/abbreviated url eg. http://youtu.be/... because this can also stop the video from loading.</div>
+<h1><a name="sec9_0">9</a> Creating a Project<a class="top" href="#toc">top</a></h1>The haven theme features a Project custom post type. This can be found in the main WP admin menu <i>Projects</i>. All portfolio items will need to have their project content created first using this custom post type. Once it has been created here it will be available to be inserted into portfolio pages, as well as widgets.<br/>
+<br>
+<br/>
+<b>To create a Project custom post do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Select the <i>Projects</i> item in the main admin menu &amp; select &quot;Add New&quot;<br/>
+	</li>
+	<li>Give the Project a title<br/>
+	</li>
+	<li>Enter project text content into the WP editor. Here shortcodes are supported, eg. Columns. 
+	</li>
+	<li>Select a format for the project.  The project format determines how the project appears on the single project page and also the expanding project preview area. The options are: <b>Standard</b>, <b>Video</b> and <b>Gallery</b>. See below for an explanation of each of these types and their associated options.<br/>
+	</li>
+	<li>Set the projects Featured Image This will be the image which appears on the portfolio grid thumbnails.</li>
+</ol>
+<b>Project Preview</b>
+<br/>
+Projects may be viewed in a single project page, or in an expanding project viewer, which opens directly above the portfolio grid in the one page setup.<br/>
+<br>
+<img src="shots/project_preview.jpg" alt="[project_preview.jpg]" title="" />
+<br/>
+<table><tr><td class="option">Ajax-load</td><td class="value">This option allows you to specify if the project will be shown on its own page or in an &quot;in-place&quot; ajax based expanding project preview section.<td></tr></table>
+<h2><a name="sec9_1">9.1</a> Project Format: Standard</h2>
+<br/>
+This format is the most simple project type and has no additional options and on the single projects page holds one single image <i>The featured image inserted in the above steps</i>. Therefore you can now publish the project.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec9_2">9.2</a> Project Format: Video</h2>
+<br/>
+This format accepts a custom video post type as its media content. To insert this video do the following:<br/>
+<br>
+<img src="shots/bsp_proj_vid.jpg" alt="[bsp_proj_vid.jpg]" title="" />
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Video Options</i> box. There you will find a drop menu containing the list of all the custom video post types which have been created.<br/>
+	</li>
+	<li>Select the video you wish to feature and publish the the project .</li>
+</ol>
+<div class="alert">In order for a video to appear in the list, it first needs to be created. See the section on <b>Creating A Video</b> for more information.</div>
+<br/>
+<br>
+<br/>
+<h2><a name="sec9_3">9.3</a> Project Format: Gallery</h2>
+<br/>
+This format accepts a custom gallery post type as its media content. To insert this content do the following:<br/>
+<br>
+<img src="shots/bsp_proj_gal.jpg" alt="[bsp_proj_gal.jpg]" title="" data-spots="1:415:137" />
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Scroll down the page to the <i>Slider</i> box. There you will find a drop menu containing the list of all the custom gallery post types which have been created.<br/>
+	</li>
+	<li>Select the gallery <div class="hotspot-link">1</div> you wish to feature in this project.</li>
+</ol>
+<div class="alert">In order for a gallery to appear in the list, it first needs to be created. See the section on <b>Creating A Gallery</b> for more information.</div><div class="note">All Gallery type project formats will display their media content as a slider.</div>
+<h1><a name="sec10_0">10</a> Creating Staff Member Profiles<a class="top" href="#toc">top</a></h1>The haven theme features a staff member custom post type. This can be found in the main WP admin menu <i>Staff Members</i>. All staff member profiles which will be inserted into this theme will need to have their content created first using this custom post type. Once it has been created here it will be available to be inserted into the theme via the &quot;Staff&quot; shortcode. The following options are available in this custom post type:<br/>
+<br>
+<table><tr><td class="option">Position</td><td class="value">Enter the staff member&#39;s position. Eg. developer or founder<td></tr><tr><td class="option">Social Profile Links</td><td class="value">Choose social profiles for the staff member. Make sure all of the links start with http://<td></tr></table>The Staff member&#39;s name is entered as the main title of the custom post type.<div class="note">To insert this staff member&#39;s profile into the theme, you can use the shortcode generator.</div>
+<h1><a name="sec11_0">11</a> Creating Testimonials<a class="top" href="#toc">top</a></h1>The haven theme features a testimonial custom post type. This can be found in the main WP admin menu <i>Testimonials</i>. A testimonial is used in two places in this theme. 1. Logo display (only image is used). 2. A quotation with a cite. All testimonials which will be inserted into this theme will need to have their content created first using this custom post type. Once it has been created here it will be available to be inserted into the theme via the shortcode generator. The following options are available in this custom post type:<br/>
+<br>
+<b>Type 1 - Logo</b>
+<br/>
+Enter the logo image as the featured image of the testimonial post. A title should be entered into the post also, so it can be identified when being inseted into the testimonial page template.<br/>
+<br>
+<b>Type 2 - Quotation/Cite Pair</b>
+<br/>
+Enter the cite or sayer&#39;s name as the post title. Enter the quotation or testimonial text content into the WP editor.A qualification or position or some other piece of info. about the cite may be entered into the field immediately below the Wp editor, called &quot;Type&quot;. The content entered here will appear immediately after the cite, on the same line.<div class="note">To insert this testimonial into the theme, you can use shortcode generator and insert the text testimonails into the editor area of the testimonail page template. The logos are entered in this page template using the &quot;testimonials&quot; options beneath the editor.</div>
+<h1><a name="sec12_0">12</a> Creating Pages<a class="top" href="#toc">top</a></h1>The haven theme features 11 different page templates for you to choose from. Each of these templates has a different configuration or different options. These templates and their associated options are explained here below.<div class="note">All of these custom page templates may be used multiple times just like posts.</div><b>To Create a Page:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Pages&gt;Add New in the main admin menu.<br/>
+	</li>
+	<li>Give the page a title (This will appear at the top of the page in the browser)<br/>
+	</li>
+	<li>Enter some content for the page <i>shortcodes are supported</i>.<br/>
+	</li>
+	<li>Select which page template to use for this page. See above for an explanation of the page templates which are available in the haven theme.<br/>
+	</li>
+	<li>In the sidebar box select what sidebar you would like to use for this page. For sidebars to appear in this list you first have to <i>create them in the haven theme options</i> and add some widgets. (Some page templates do not support sidebars and hence this box will not appear)<br/>
+	</li>
+	<li>Depending on which page template you have chosen the final few steps will differ. So we will now look at these steps on a template by template basis.</li>
+</ol>
+<div class="alert">Most of the page templates are self explanatory. Once selected their custom options appear and can be set/filled. There are a few which are a bit more complex and these will be dealt with in detail below. </div>
+<br/>
+<br>
+<h2><a name="sec12_1">12.1</a> Page template: Common Options</h2>
+<br/>
+All page templates share the following options.<br/>
+<br>
+<table><tr><td class="option">Background image</td><td class="value">You can upload an image that wil be used as a background for this section.<td></tr><tr><td class="option">Background color</td><td class="value">Select the color that will be applied to the background of this section.<td></tr><tr><td class="option">Page Icon</td><td class="value">Select here the icon which will be used for this page. This icon will be seen in the page title.<td></tr></table>
+<h2><a name="sec12_2">12.2</a> Page template: Home</h2>
+<br/>
+This is the master page of this theme. Other pages may be inserted as sub sections of this page.This page contains the fullscreen background image slider, as well as the introductory text captions which also appear on the homepage.<br/>
+<br>
+<table><tr><td class="option">Slider Gallery</td><td class="value">Insert here the gallery custom post type which will be used to provide the media content for the homepage fullscreen gallery. Note that you have to create a gallery first, under &quot;Galleries&quot; menu.<td></tr></table><div class="note">Slider taglines and buttons are added when creating/editing gallery. Once you upload the images, on the bottom you will have thumbnails listed. Each thumbnail has a little &quot;pen&quot; icon which provides fields to enter additional options like title, text, button and button link.</div>
+<h2><a name="sec12_3">12.3</a> Page template: Header</h2>
+<br/>
+This page template is used to provide a way of creating one-page designs without the use of a splash section. You can use this page as a master page instead of the &quot;Home&quot; page section and then insert child pages as normal.<br/>
+<br>
+<br/>
+<h2><a name="sec12_4">12.4</a> Page template: Default Template</h2>
+<br/>
+This page template is the standard page. Editor content inserted in this page template will display immediately underneath the page title. There are no additional options available in this page.<br/>
+<br>
+<br/>
+<h2><a name="sec12_5">12.5</a> Page template: About</h2>
+<br/>
+This page template features two-columns layout (only in modern browsers) and a big capital first letter of the paragraph. You can also add social links at the bottom using the provided fields under the content editor.<br/>
+<br>
+<br/>
+<h2><a name="sec12_6">12.6</a> Page template: Blog</h2>
+<br/>
+<img src="shots/blog.jpg" alt="[blog.jpg]" title="" />
+<br/>
+This page is the default page for displaying the blog posts. The following options are available in this page template:<br/>
+<br>
+<table><tr><td class="option">Max Posts</td><td class="value">Maximum number of posts to show<td></tr><tr><td class="option">Paged Result</td><td class="value">Display a pager when more posts are found than specified in the &#39;Maximum&#39; field.<td></tr><tr><td class="option">Include Sticky Posts</td><td class="value">Include sticky posts in the displayed list.<td></tr><tr><td class="option">Category</td><td class="value">Only show posts from a specific category. Choose the category here.<td></tr><tr><td class="option">Tag</td><td class="value">Only show posts with a specific tag. Choose this tag here.<td></tr><tr><td class="option">Post Format</td><td class="value">Only show posts of a specific format. Chose this format here.<td></tr></table>
+<h2><a name="sec12_7">12.7</a> Page template: Portfolio</h2>
+<br/>
+This page template displays a selection of projects in a grid format. The following options are available in this page:<br/>
+<br>
+<table><tr><td class="option">Max Project</td><td class="value">Enter the maximum number of thumbs to be displayed (optional). Leave empty to display all projects.<td></tr><tr><td class="option">Selection</td><td class="value">Manually Add Specific Projects and decide their order.<td></tr><tr><td class="option">Include based on Tags</td><td class="value">Choose to limit the projects displayed on this page based on a specific set of project tags.<td></tr></table>
+<h2><a name="sec12_8">12.8</a> Page template: Testimonials</h2>
+<br/>
+This page template displays a selection of clients logos. These logos are first created using the &quot;testimonial&quot; custom post type, see usage Type 1 in the &quot;Creating Testimonials&quot; section for more info. This page is also suitable for using a testimonials slider shortcode.<br/>
+<br>
+<table><tr><td class="option">Testimonials</td><td class="value">Select here the testimonial custom posts to insert into this page. Testimonials must first be created before they will appear in this list. See the section entitled &quot;Creating Testimonials&quot; for more info.<td></tr></table>
+<h2><a name="sec12_9">12.9</a> Page template: Stats</h2>
+<br/>
+This page template displays a list of short facts represented by an icon, number and a short text. All of those are added via shortcodes, which are accessed by using a blue SC button in your content editor. For more info about Stats, see the section about Shortcodes.<br/>
+<br>
+<br/>
+<h2><a name="sec12_10">12.10</a> Page template: Divider</h2>
+<br/>
+<img src="shots/image-banner.jpg" alt="[image-banner.jpg]" title="" /> 
+<br/>
+This page template features a big white colored text + image that slides into view when scrolled. This page template should be used to separate two sections, where second section is white in background. Slide-in image is actually a featured image.<br/>
+<br>
+<br/>
+<h2><a name="sec12_11">12.11</a> Page template: Pricing Tables</h2>
+<br/>
+This page template is used for displaying previously created pricing tables.<br/>
+<br>
+<table><tr><td class="option">Pricing Tables</td><td class="value">Select here the pricing tables custom posts to insert into this page. Pricing tables must first be created before they will appear in this list.<td></tr></table>
+<h2><a name="sec12_12">12.12</a> Page template: Services</h2>
+<br/>
+This page template is used for displaying previously created services.<br/>
+<br>
+<table><tr><td class="option">Services</td><td class="value">Select here the services custom posts to insert into this page. Services must first be created before they will appear in this list.<td></tr></table>
+<h1><a name="sec13_0">13</a> Theme Options<a class="top" href="#toc">top</a></h1>In this section we will explain the custom options that come with the haven theme, where to find them and what you would use them for.<br/>
+<br>
+haven&#39;s custom theme options can be found at <i>Appearance &gt; Theme Options</i>. These options will appear once the haven theme has been successfully installed. The various options are organized into vertical tabs on the left side. Simply click on a tab to show its contents in the main content area.<div class="note">In the admin panel itself, beside each option, you will see a short description of what that particular options does. In most cases these short descriptions will be enough to explain how to use the custom options found in this theme. Nonetheless all options are explained here below.</div>
+<h2><a name="sec13_1">13.1</a> General Options</h2>
+<br/>
+General options usually with a global or site wide effect. This tab is open by default when this page is loaded.<br/>
+<br>
+<table><tr><td class="option">Import Demo Content</td><td class="value">This option allows you to import ready made content for the theme to make it look like the theme&#39;s online demo site. See the theme setup section for more information.<td></tr><tr><td class="option">Logo</td><td class="value">This is the logo for the whole site and appears in the top left corner - Replace with your own logo in .png format.<td></tr><tr><td class="option">Header Title</td><td class="value">Header supports both textual and graphic logo. If graphic logo upload field is empty, yhis field will be used for header title.<td></tr><tr><td class="option">Favicon</td><td class="value">This is the favicon or bookmark icon for the website, replace with your own 16x16px icon.<td></tr><tr><td class="option">Custom CSS</td><td class="value">This field allows the insertion of custom CSS selectors. This is required if you wish to change some aspect of the theme&#39;s default CSS. CSS selectors inserted here will overwrite those in the theme&#39;s default CSS. Note: For notes on how to find the CSS selector of the element you wish to change, please refer to the section entitled &quot;Custom CSS&quot;<td></tr><tr><td class="option">Custom JS</td><td class="value">This field is used to add custom javascript to the theme. For example this field would be used to add Google Analytics tracking code to the theme.<td></tr></table>
+<h2><a name="sec13_2">13.2</a> Header Options</h2>
+<br/>
+<table><tr><td class="option">Social Profile Links</td><td class="value">Enter links to social media profiles. Click the &quot;Add Social Link&quot; button and a pair of field will appear below the button. The first field is the name of all available social network icons, just choose one using the drop menu, while the second field is a url field where you can enter the link to your profile.<td></tr></table>
+<h2><a name="sec13_3">13.3</a> Footer Options</h2>
+<br/>
+<table><tr><td class="option">Social Profile Links</td><td class="value">Enter links to social media profiles. Click the &quot;Add Social Link&quot; button and a pair of field will appear below the button. The first field is the name of all available social network icons, just choose one using the drop menu, while the second field is a url field where you can enter the link to your profile.<td></tr><tr><td class="option">Copyright</td><td class="value">Here the copyright notice of the website is inserted. Simple HTML is supported.<td></tr><tr><td class="option">Background color</td><td class="value">Select a color applied to the footer background.<td></tr><tr><td class="option">Display Contact Form</td><td class="value">Choose whether to display a contact form or not.<td></tr></table>
+<h2><a name="sec13_4">13.4</a> Color Options</h2>
+<br/>
+This tab controls the color(s) of the theme. You can reset the options to the original color at any time by clicking &quot;Restore Default&quot; link just below the input field.<br/>
+<br>
+<table><tr><td class="option">Primary Color</td><td class="value">Using the color picker, set the primary color of the theme.<td></tr></table>
+<h2><a name="sec13_5">13.5</a> Google Font Options</h2>
+<br/>
+In this tab you can specify Google Web Typefaces to be used in various parts of the theme.For each elements listed below you can choose any front from the Google Web Font library. Once you have chosen a font from the list, you will see a preview of this font immediately beneath the list box. Icons will appear on the right hand side of the preview. These icons indicate what font weights are available for that chosen typeface. The Icons are as follows:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li><b>R</b> -- Regular<br/>
+	</li>
+	<li><b>B</b> -- Bold<br/>
+	</li>
+	<li><b>I</b> -- Italics<br/>
+	</li>
+	<li><b>BI</b> -- Bold Italics</li>
+</ol>
+When deciding what font to use, ensure that the chosen font contains the font weight required by the element in the theme, where it is being applied. For example, All main headings are bold, so you need to select a new font for these elements which supports a bold font weight. If you select a font which does not have a bold icon, the font will not be applied. 
+<br/>
+<br>
+The full list of available fonts and their respective weights can be seen in the <a href="http://www.google.com/webfonts" rel="nofollow">Google Web Font Library</a>
+<br/>
+<br>
+<br/>
+<h2><a name="sec13_6">13.6</a> Contact Form Options</h2>
+<br/>
+This tab controls the contact details displayed near the footer of the theme as well as the contact form (visible once the email address link in the theme footer is clicked). Apart from these options, the contact from requires no additional setup.<br/>
+<br>
+<table><tr><td class="option">Email Address</td><td class="value">Enter the email address where the contact form emails will be sent. If this field is left blank, no contact form will be shown in footer. Once entered here, this email address will also appear in text form in the footer of the site.<td></tr><tr><td class="option">Subject Line</td><td class="value">Enter a custom subject line which will appear on all email sent from the contact form. This is useful when setting up email filters<td></tr><tr><td class="option">Contact Form Title</td><td class="value">Enter the title of the footer contact form.<td></tr><tr><td class="option">Contact Form Description</td><td class="value">Text displayed below the footer title.<td></tr><tr><td class="option">Mail Sent Message</td><td class="value">The Message shown when the form message has been sent without errors.<td></tr><tr><td class="option">Form Error Message</td><td class="value">The Message shown when the form message has not been sent due to errors.<td></tr></table>
+<h2><a name="sec13_7">13.7</a> Widget Areas Options</h2>
+<br/>
+This tab controls the creation of widget areas in the theme. The haven theme supports widgetized sidebars. This theme also supports unlimited widgetized areas, this means that any post can display a different sidebar. Each sidebar&#39;s contents can be unique.<br/>
+<br>
+<table><tr><td class="option">Widget Areas</td><td class="value">Create new sidebar widget area for use in the theme. Once the widget area has been created, it will be available on the <b>Appearance &gt; Widgets</b> page where you can add widgets to it.<td></tr></table>
+<h2><a name="sec13_8">13.8</a> Advanced Options</h2>
+<br/>
+This section controls a few more advanced options for the theme. These options would only concern the more advanced users.<br/>
+<br>
+<table><tr><td class="option">Retina Support</td><td class="value">If set to &quot;Yes&quot; then hi-res versions of all images will be server to devices with retain support.<td></tr><tr><td class="option">Lazy Loading</td><td class="value">Lazy Loading only loads images once they are needed. Without lazy loading all image assets are loaded upon page load. Using Lazy Loading will make page load times faster, and page rendering less cpu heavy, which is especially useful in mobile and tablet devices.<td></tr><tr><td class="option">Javascript Compression</td><td class="value">This instructs the theme to use a compressed version of the javascript source code required by this theme. Using the compressed javascript speeds up the loading of the theme&#39;s pages.<td></tr><tr><td class="option">CSS Compression</td><td class="value">This instructs the theme to use a compressed version of the CSS stylesheets required by this theme. Using the compressed CSS speeds up the loading of the theme&#39;s pages.<td></tr><tr><td class="option">Show Thumbnails</td><td class="value">If set to &quot;Yes&quot;, featured image thumbnails (if inserted) are shown in the post list view in the WordPress default admin post list - <i>Posts&gt;All Posts</i>. This simply makes it easier to recognise posts based on their featured images as opposed to their titles.<td></tr></table><div class="note">The only reason for disabling the &quot;CSS/JS Compression&quot; options would be if you wished to make significant changes to the CSS or Javascript sources for this theme. For minor CSS and Javascript changes to the theme, the <i>Custom CSS/JS</i> fields in the <i>General</i> Theme options tab (See above), should be sifficient.</div>
+<h2><a name="sec13_9">13.9</a> Auto Update Options</h2>
+<br/>
+This section controls whether the theme automatically checks for updates.Checking for updates is handled via WordPress internal updater functions. Once an update is found it can be installed from within the theme page <i>Appearance &gt; Themes</i>. 
+<br/>
+<table><tr><td class="option">Check for Theme Updates</td><td class="value">Specify if the theme should automatically check for updates<td></tr><tr><td class="option">Envato Username</td><td class="value">Enter your username of the Envato account which was used to purchase the theme<td></tr><tr><td class="option">API Key</td><td class="value">Enter your Envato API key, which can be found in your settings page of your Envato account<td></tr></table><div class="note">Please note that during the updating of the theme, no content will be altered. However if you have modified the theme files manually, like some advanced users do, then these modification would likely be reset/lost during an update.</div><div class="alert"> Alert 1 - Be careful if you have translated the theme because upon theme update, language files are <b>NOT</b> preserved.You will need to manually restore your po/mo files right after the update.</div>
+<br/>
+<div class="alert"> Alert 2 - To make this auto updater feature we have used a php class developed by Envato which is based on their marketplace API. It has been reported by some users that this feature doesn&#39;t work at all or only works intermittently. There is nothing we can do about this unfortunately because problems arise when Envato change something in their API but do not immediately update their class. Therefore if this method of updating does not work for you, there is always the manual way.  </div>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec13_10">13.10</a> Branding Options (Hidden)</h2>
+<br/>
+These options allow our buyers to rebrand the custom admin panel with their own logo and link. These options are hidden by default. See the section on <b>Branding The Admin Panel</b> later in this documentation for more information. 
+<br/>
+<table><tr><td class="option">Custom Admin Panel Logo</td><td class="value">Upload a logo to be used as the branding of the admin panel<td></tr><tr><td class="option">Custom Admin Panel Url</td><td class="value">Attach a link to this new logo<td></tr></table><div class="note">When changing any settings in the theme options panel, always remember to save those changes before navigating away from the page. To do this simply click &quot;Save All Changes&quot; button at the bottom of the options page.</div>
+<h1><a name="sec14_0">14</a> Widgetized Areas &amp; Inserting Widgets<a class="top" href="#toc">top</a></h1><div class="note">If you have imported the demo content supplied with this theme, then this setup will be already done. In which case you may only need to modify things. However we still recommend that you read this section carefully because it contains important information which will be useful during modification of the imported widget configuration.</div>The haven theme features support for unlimited widget area. There is 1 widgetized areas in this theme: The sidebar. Because of the unlimited widget area support in this theme, you can insert a unique sidebar into each and every page which used the &quot;Blog&quot; page template. This is very easy to setup and you will be taken through this process in the rest of this section.<div class="note">Please note once a sidebar is assigned to a blog page, all posts on that blog page will display the same sidebar. There is no option to specify a different sidebar on a post by post basis.</div>
+<h2><a name="sec14_1">14.1</a> Creating A Widgetized Area</h2>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance &gt; Theme Options in main menu<br/>
+	</li>
+	<li>Select the <i>Widget Areas</i> tab<br/>
+	</li>
+	<li>Enter a title for your new widget area, click Add New and your widget area will appear in the table below the input field.<br/>
+	</li>
+	<li>Save your changes</li>
+</ol>
+<br/>
+<h2><a name="sec14_2">14.2</a> Inserting Widgets</h2>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance &gt; Widgets in the main menu<br/>
+	</li>
+	<li>On the right side of this page you will see the available widget areas.If you have not imported the demo content you will see 1 widget areas created when you install the haven theme: the <b>Default</b> sidebar widget area.<br/>
+	</li>
+	<li>These widget areas will be empty and so will appear minimized.<br/>
+	</li>
+	<li>Widgets, once added to the sidebar will expand so that you can fill in the various options associated with that specific widget.<br/>
+	</li>
+	<li>Once you have completed the widget options, click <i>Save</i> and then &quot;close&quot; to minimize the widget.</li>
+</ol>
+<br/>
+<h2><a name="sec14_3">14.3</a> Placing Your widgetized Area Into The Theme</h2>
+<br/>
+Once you have filled your widget area with your desired widgets, you will still need to tell the theme on which posts you would like to display this widget area. To do this see the following:<br/>
+<br>
+<b>To Insert The Widget Area as a Sidebar:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>On some pages you will see on the right hand side below the &quot;tags&quot; box, an additional content boxes entitled <b>Sidebar</b>.<br/>
+	</li>
+	<li>This boxes allow you to select which widget area is to be used specifically on that post for the sidebar. This may be different for each and every page template. Some templates do not support sidebars, in this case no sidebar selection box will appear on that page.</li>
+</ol>
+<br/>
+<h1><a name="sec15_0">15</a> The Main Menu<a class="top" href="#toc">top</a></h1>The haven theme contains 1 menu locations, the <b>Main Menu</b>. This menu does not support any sub levels of menu items. In this section we will outline the steps involved in creating the menu for this theme.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec15_1">15.1</a> Creating A Menu</h2><div class="note">Before you create your menu for this theme, make sure your pages/sections have been created already. This way they will be available to be inserted into the menu and their parent/child dependencies will be saved also.</div><ol style="list-style-type: decimal">
+	<li>Go to Appearance&gt; Menus in the main admin menu.<br/>
+	</li>
+	<li>At first you will probably need to add a menu, give it a name &amp; click <i>Create Menu</i>. The new menu will appear in a tab in this location. Click on this tab to begin adding menu items.<br/>
+	</li>
+	<li>Use the dialog boxes on the left hand side of the page to add items to your menu. Select the master page you created as well as all of the sub sections or child pages and click &quot;Add to Menu&quot;.<br/>
+	</li>
+	<li>Now you can drag the newly inserted menu item to their correct sequence and rename their titles if required. 
+	</li>
+	<li>After you have added and edited the menu items click <i>Save Menu</i> in the bottom of this area.</li>
+</ol>
+<div class="note">If you have imported demo content supplied with this theme, then this menu will already be made however it will still need to be saved again before working correctly, to do this click &quot;Save Menu&quot;.</div>
+<h2><a name="sec15_2">15.2</a> Adding The Menu To the Theme</h2>
+<br/>
+Finally you will need to specify the location for this menu. As mentioned above, the haven theme contains 1 possible menu location; the Main Menu.<br/>
+<br>
+<br/>
+<b>To assign the Main Menu</b>
+<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Go to Appearance&gt; Menus in the main admin menu.<br/>
+	</li>
+	<li>At the top left of that page you will see a panel titled <i>Theme Locations</i>
+	</li>
+	<li>Here there will be a select box under the two available locations in the haven theme.These select boxes will hold a list of all created menus.<br/>
+	</li>
+	<li>so select the menu you wish to place in the Main Menu location from the drop down and then click <i>Save</i>.</li>
+</ol>
+<br/>
+<h1><a name="sec16_0">16</a> Shortcodes<a class="top" href="#toc">top</a></h1>This theme contains several useful shortcodes. These are basically helper codes which can be inserted into the default Wordpress editor and when the page is rendered they will become full elements. The type of element depends on the type of shortcode used. Shortcodes are available for inserting videos and sliders, columns, accordions, icons and services. In this section we will list these available shortcodes and the properties or parameters associated with each one. 
+<br/>
+To insert a shortcode simply click the <i>Insert Shortcode</i> button in the toolbar area of the default Wordpress editor.<br/>
+<br>
+<img src="shots/Shortcode Button.png" alt="[Shortcode%20Button.png]" title="" />
+<b>^ The Shortcode Icon seen above in blue &quot;SC&quot; on right end of the icons in the toolbar.</b><div class="note">It should be noted that it is not sufficient to copy and paste a shortcode&#39;s short syntax from one page/post/theme&#39;s editor window to another. To be inserted correctly each shortcode needs to be inserted using the shortcode editor. If this process is not followed, the page will not render correctly and the layout will not look as expected.</div><b>To Add a Shortcode do the following:</b>
+<ol style="list-style-type: decimal">
+	<li>Position the cursor in the editor in the specific position where you wish to place the shortcode or element.<br/>
+	</li>
+	<li>Click the Shortcode button to open the shortcode editor/manager dialog (see image above for this button&#39;s location.<br/>
+	</li>
+	<li>Select the desired shortcode type from the dropdown list 
+	</li>
+	<li>Fill in all of the required parameters for that shortcode<br/>
+	</li>
+	<li>When you are ready, click <i>Insert Shortcode</i> the editor will then close and you will see the shortcode appear in the editor window.</li>
+</ol>
+<br/>
+<h2><a name="sec16_1">16.1</a> Shortcode - Stats</h2>
+<br/>
+Use this shortcode to insert a nicely formatted status blocks.<br/>
+<br>
+<table><tr><td class="option">Status icon</td><td class="value">Choose from a list of icons the one that best describes your status.<td></tr><tr><td class="option">Title</td><td class="value">Title displayed.<td></tr><tr><td class="option">Number</td><td class="value">A number representing the status value.<td></tr></table>
+<h2><a name="sec16_2">16.2</a> Shortcode - Staff</h2>
+<br/>
+Use this shortcode to insert a staff profile.<br/>
+<br>
+<table><tr><td class="option">Staff</td><td class="value">Pick staff to display. In order to appear in this list staff profiles need to first be created using the &quot;Staff Members&quot; item in the main WP admin menu.<td></tr></table><div class="note">To achieve the layout of staff members seen in the theme&#39;s online demo, a 3 column shortcode should first be used, and then a single staff member&#39;s profile shortcode inserted into each column.</div>
+<h2><a name="sec16_3">16.3</a> Shortcode - Testimonials</h2>
+<br/>
+Use this shortcode to insert a slider of testimonials from your clients. This shortcode should be used in the &quot;Testimonials&quot; page template.<br/>
+<br>
+<table><tr><td class="option">Testimonials</td><td class="value">Pick testimonials to display. In order to appear in this list testimonials need to first be created using the &quot;Testimonials&quot; item in the main WP admin menu.<td></tr></table>
+<h2><a name="sec16_4">16.4</a> Shortcode - Columns</h2>
+<br/>
+Use this shortcode to create a column based layout for your content. When creating column based layouts using this shortcode, keep in mind that on smaller resolutions all column based layouts will become narrower before collapsing to a single column in the mobile resolution.<br/>
+<br>
+<table><tr><td class="option">Layout</td><td class="value">Choose layout for columns. Chosen layout&#39;s width ratio is visually displayed below selector.<td></tr></table>
+<h2><a name="sec16_5">16.5</a> Shortcode - Video</h2>
+<br/>
+Use this shortcode to insert videos into the post or page content areas. YouTube and Vimeo Videos are the only supported video types. For Videos to appear in the drop list, they first need to be created in the Video custom post type. See the Creating Video Items section.<br/>
+<br>
+<table><tr><td class="option">Use Video</td><td class="value">Select the video from the drop list which you would like to insert.<td></tr></table>
+<h1><a name="sec17_0">17</a> Fonts<a class="top" href="#toc">top</a></h1>The haven theme uses Google web fonts by default. These fonts are as follows:<br/>
+<br>
+<table><tr><td class="option">General Font</td><td class="value">Monserrat (Sans Serif)<td></tr><tr><td class="option">Secondary Font</td><td class="value">Vollkorn (Serif)<td></tr></table>If you wish to make changes to these fonts you have the following options:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Use the Custom CSS box in the Theme options to insert new fonts into the theme manually with CSS.<br/>
+	</li>
+	<li>Insert any Google Web font using the &quot;Fonts&quot; tab in the theme options. See the Theme Options section for an explanation of the options in this tab. The section is entitled <b>Google Font Options</b>
+	</li>
+	<li>The Fonts Tab also allows advanced users to specify new fonts, line heights, sizes etc. See that page for more info.</li>
+</ol>
+<br/>
+<h1><a name="sec18_0">18</a> Theme Translation<a class="top" href="#toc">top</a></h1>The only method to translate this theme is Using a POT file.<br/>
+<br>
+A POT file is a simple method but it is designed to basically translate the theme&#39;s static text content into one other language. For example this would be used when the theme was designed to be used in English, but your website will be in Italian or another language, and you would like to translate all the parts of the theme which are not the content you will be writing. This would included back end translation such as admin field names, descriptions etc, as well as front end static text which is visible to the visitor. These front end items would included things like contact from field names, comment section titles, other titles which appear automatically rather then being actually entered by you. This method is not designed to handle language switching in your website. If you require this more advanced functionality, you will need to use a plugin. No specific plugins have been tested with this theme, and hence we cannot guarantee that they will work.<br/>
+<br>
+<br/>
+<h2><a name="sec18_1">18.1</a> Translation Using POT File</h2>
+<br/>
+To translate the theme using the POT file do the following:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Create a po file for your language, for example <b>de_DE.po</b>
+	</li>
+	<li>Copy all text from provided theme pot file into your po file<br/>
+	</li>
+	<li>Edit the po file with <b>poedit</b> <a href="http://www.poedit.net/" rel="nofollow">http://www.poedit.net/</a>
+	</li>
+	<li>Create the mo file<br/>
+	</li>
+	<li>edit <i>wp-config.php</i> file in your installation and set <b>WPLANG</b> so it matches your languages: <b>define(&#39;WPLANG&#39;, &#39;de_DE&#39;);</b>
+	</li>
+	<li>The Theme should now display all messages in your language.</li>
+</ol>
+<div class="alert"><b>BACKUP YOUR LANGUAGE PO/MO FILES</b> 
+Upon theme update, language files are <b>NOT</b> preserved. 
+You will need to manually restore your po/mo files right after the update.</div>
+<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec18_2">18.2</a> Modifying The theme&#39;s CSS</h2>
+<br/>
+The Custom CSS field provided in the haven theme&#39;s theme options panel should be used for making changes to the theme&#39;s CSS styles. This can be found in <i>Appearance&gt;Theme Options&gt;General&gt;Custom CSS</i>.<br/>
+<br>
+<br/>
+<b>To overwrite an elements CSS styles:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Locate the element&#39;s CSS selector using firebug or chrome&#39;s element inspector.<br/>
+	</li>
+	<li>Copy this selector and paste it into the Custom CSS Field found in the theme&#39;s custom options &quot;General&quot; tab.<br/>
+	</li>
+	<li>Add your new styles and you are done.<br/>
+	</li>
+	<li>Click Save All Changes at the bottom of the theme options page.<br/>
+		<br/>
+		Now the theme&#39;s default CSS will be overwritten by what you have entered into the Custom CSS box.</li>
+</ol>
+<br/>
+<h1><a name="sec19_0">19</a> Javascript<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec19_1">19.1</a> Adding Custom Javascript</h2>
+<br/>
+Similar to the Custom CSS filed in the theme options, there is also a Custom Javascript field to be used when you wish to insert additional javascript into the theme. The only difference with this field is that the javascript code placed here will not overwrite any existing javascript code. An example of custom javascript code which would be used in this field is Google Analytics. Simply paste in the javascript code provided by Google in this box, save and you&#39;re done.<br/>
+<h1><a name="sec20_0">20</a> Rebranding the Custom Admin Panel<a class="top" href="#toc">top</a></h1>As many of our buyers are buying our themes in order to sell to their clients, we have decided to aid this process by designing our theme&#39;s custom admin panel to be easily rebranded. Our theme&#39;s custom options panel contains a secret option which allows our buyers to rebrand the admin panel with their logo and and afterwards these options disappear. This allows our buyers who provide their clients with themes which strengthen their brand identity with their clients and which don&#39;t force cross links to the pixelentity brand.<br/>
+<br>
+<img src="shots/branding.jpg" alt="[branding.jpg]" title="" data-spots="1:100:290,2:206:429,3:520:295,4:520:464" />
+<br/>
+<b>To rebrand the admin panel do the following:</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>Navigate to the theme options page. <i>Appearance &gt; Theme Options</i> <div class="hotspot-link">1</div>
+	</li>
+	<li>In the browser address bar, add the following query string to the end of the existing url and hit enter.<div class="highlight"><pre><span class="o">&amp;</span><span class="nt">branding</span><span class="o">=</span><span class="nt">1</span>
+		</pre></div>
+	</li>
+	<li>A new tab will appear in the Theme Options page named <i>Branding</i> <div class="hotspot-link">2</div> The contents of this tab is shown in the above screenshot.<br/>
+	</li>
+	<li>Here <div class="hotspot-link">3</div> you can set an image to be used as the logo/ branding for the custom admin panel. You can also set a custom url which will be attached to the logo image.<br/>
+	</li>
+	<li>To see the changes, click save <div class="hotspot-link">4</div> remove the query string from the url and reload the page.<br/>
+	</li>
+	<li>The branding tab should now be hidden again and the new logo visible.</li>
+</ol>
+See a video of this process--&gt; <a href="http://www.youtube.com/watch?v=uGv0xr87ns4" rel="nofollow">REBRANDING THE ADMIN PANEL VIDEO</a>
+<h1><a name="sec21_0">21</a> Updates<a class="top" href="#toc">top</a></h1><b>FOR DETAILS OF UPDATES TO THIS THEME PLEASE REFER TO THE CHANGE LOG AT THE BOTTOM OF THE ITEM&#39;S DESCRIPTION PAGE ON THEMEFOREST.</b>
+</div>
+		
+		
+		<!--footer section-->
+		<div class="footer">
+			<div class="outro">
+				
+				<!--useful links section-->
+				<div class="links">
+					<span>USEFUL LINKS</span>
+					<ul>
+						<li><a href="http://support.pixelentity.com">Support Forums</a> The fastest way to get help</li>
+						<li><a href="http://pixelentity.com">Pixelentity.com </a> Free PSD Design Resources</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Follow Pixelentity</a> Add our items to your homepage.</li>
+						<li><a href="http://themeforest.net/user/pixelentity/follow">Pixelentity on Twitter</a> Get informed of new releases & updates</li>	
+					</ul>
+				</div>
+				
+				<!--getting support section-->
+				<p class="tagline"><span>STILL NEED HELP? - GETTING SUPPORT</span>If having read through all of the information in this page you are still experiencing problems, feel free to contact us. We provide free support* to our buyers via our support forums <i>(See link on right)</i>. Head on over there, read the FAQs, register <i>(using your purchase code)</i> and post your question in the appropriate forum.<br/><br/> *<b>Please note that support requests will not be answered if they relate to information available on this page.</b><br/><br/>Best regards, The Pixelentity Team</p>
+				
+			</div>
+			
+			<!--copyright details-->
+			<p class="copyright">Copyright &copy 2011+ Pixelentity. All rights reserved.</p>
+			
+		</div>
+		<!--end footer section-->
+		
+    </body>
+</html>

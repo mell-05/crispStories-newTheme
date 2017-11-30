@@ -1,0 +1,115 @@
+/*
+
+Theme Name: Haven
+Theme URI: http://themeforest.net
+Description: Responsive One Page Portfolio
+Version: 1.0.0
+Author: bitfade
+Author URI: http://themeforest.net/user/bitfade
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: photoblogging
+
+*/
+
+/***** SMARTPHONES *****/
+
+@media all and (max-width: 769px){
+
+	#the-navigation{ background-color: #222; padding-top: 25px; }
+	#mobile-toggle{ display: block; }
+	#menu > ul{ float: left; padding-top: 21px; margin-bottom: 22px; }
+	#menu > ul li{ float: none; }
+	#menu > ul li i{ display: none; }
+	
+	.border-bottom{ border: none; }
+	.hero-title h1{ border: none; font-size: 2.5em; }
+	
+	.flex-control-nav{ display: none !important; }
+
+	.about-section .pe-wp-default p{ -webkit-columns: 1; }
+	.promo-pic{ opacity: 1; top: 60px !important; }
+
+	.team-member-holder{ margin-bottom: 44px; }
+	
+	.service{ margin-bottom: 44px; }
+	
+	#filters li{ margin-bottom: 22px; }
+	
+	.stat span{ display: inline-block; margin-bottom: 44px; }
+	
+	.price-table{ margin-bottom: 44px; }
+	.value{ 
+		transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		margin-bottom: 44px;
+		margin-top: 0px; 
+	}
+	
+	#clients{ display: none; }
+	
+	.form-upper{ width: 100%; }
+	.form-upper h5{ border-right: none; }
+	.form-lower{ width: 100%; margin-bottom: 22px; }
+	.form-lower h5{ border: none; }
+	#form-button{ width: 100%; }
+	
+	#contact .social-icons .line{ width: 50%; }
+	
+	
+	
+	.trigger-value{
+
+		margin-bottom: 66px;
+		margin-top: 22px;
+	}
+
+	#the-navigation > .row > .large-8 {
+		width: 100%;
+	}
+
+
+}
+
+
+/***** TABLETS PORTRAIT & LANDSCAPE *****/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+	.divider{ background-attachment: scroll !important; }
+	.home-slider .slides li{ background-attachment: scroll !important; }
+	.services{ background-attachment: scroll !important; }
+	.promo-pic{ opacity: 1; top: 60px !important; }
+	.trigger-value{
+		transform: scale(1.2,1.2);
+		-ms-transform: scale(1.2,1.2); /* IE 9 */
+		-webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
+		margin-bottom: 66px;
+		margin-top: 22px;
+	}
+
+
+}
+
+
+/***** PORTRAIT TABLETS *****/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+	#menu > ul li i{ display: none; }
+
+	.service{ min-width: 100%; max-width: 100%; }
+	
+	.form-upper{ width: 100%; }
+	.form-upper h5{ border-right: none; }
+	.form-lower{ width: 100%; margin-bottom: 22px; }
+	.form-lower h5{ border: none; }
+	#form-button{ width: 100%; }
+
+}
